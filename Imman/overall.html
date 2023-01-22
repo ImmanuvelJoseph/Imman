@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr =[100,"hi",true,16,'a',['x','y','z'] ,{name:"abc",age:20},10];
+        console.log(arr);
+        console.log(arr[0]);
+        console.log(arr [5][1]);
+        console.log(arr[6].name);
+        arr.pop();
+        window.console.log(arr);
+        console.group("How are you");
+        console.assert(arr[0]>5,"the number is greater");
+        arr[5].push("welcome");
+        console.log(arr);
+        console.groupEnd("How are you");
+        console.time("LOOP COUNT");
+        for(i=0;i<=10;i++){
+            console.count("LOOP COUNT");
+        }
+        console.timeEnd("LOOP COUNT");
+        console.dir(document.head);
+        console.log(document.head);
+        console.dir(arr);
+        console.log(arr);
+        console.error("I am an error");
+        console.warn("warning");
+        console.table(arr);
+        console.table(arr[6]);
+        console.info("hi");
+        
+        var c = 1;
+        function telling(){
+            console.log(c);
+            c++;
+        }
+       var a =setInterval(telling,1000);
+        clearInterval(a);
+       
+        
+
+        
+  </script>
+    
+</body>
+</html>

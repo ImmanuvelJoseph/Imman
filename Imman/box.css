@@ -1,0 +1,73 @@
+.box{
+    width: 500px;
+    height:300px;
+    border-width:2px;
+    border-style:solid;
+    color: chocolate;
+    font-style: italic;
+    transition: transform ;
+    border-color: black;
+    transition-duration: 1s;
+    transition-delay: 2s;
+    background: radial-gradient( blue 50% ,brown  45% , pink 20%);
+ }
+ .box:hover{
+    transform: scale(3) translateX(500px) rotate3d( 0,1,-1 ,90deg);
+ }
+ .practice{
+    width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;  
+ }
+ @keyframes example {
+    from{border: 1px solid green;
+         background-color: crimson;
+         transform: rotate(90deg);
+        }
+     to{
+        border: 3px dashed yellow;
+        background-color: blueviolet;
+        transform: rotate(-130deg) scale(2);
+     }       
+ }
+  .text {
+    background-color: red;
+    position: relative;
+    animation-name: texteg;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+  }
+  @keyframes texteg{
+    0%{color: blue; font-size: medium; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;}
+    10%{color: blue; font-size: medium; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;}
+    20%{color: green; font-size: medium; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;}
+    30%{color: violet; font-size: medium; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;}
+    40%{color: black; font-size: medium; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;}
+    50%{color: red; font-size: medium; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;}
+    60%{color: white; font-size: medium; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;}
+    70%{color: brown; font-size: medium; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;}
+    80%{color: lightgrey; font-size: medium; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;}
+    90%{color: lightslategrey; font-size: medium; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;}
+    100%{color: yellow; font-size: medium; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;}
+
+
+  }
+  .text1{
+        width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: hi;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;  
+  }
+  @keyframes hi{
+
+  }
